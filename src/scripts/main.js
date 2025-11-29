@@ -6,8 +6,8 @@ document.addEventListener('click', (e) => {
   const spiderWidth = spider.offsetWidth;
   const spiderHeight = spider.offsetHeight;
 
-  const clickX = e.clientX;
-  const clickY = e.clientY;
+  const clickX = e.clientX + window.scrollX;
+  const clickY = e.clientY + window.scrollY;
 
   let spiderX = clickX - spiderWidth / 2;
   let spiderY = clickY - spiderHeight / 2;
